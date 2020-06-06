@@ -1,0 +1,22 @@
+{
+  "name": "natours-landing-page",
+  "version": "1.0.0",
+  "description": "css built site",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GAMHnile/natourscss.git"
+  },
+  "author": "GAMHnile",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GAMHnile/natourscss/issues"
+  },
+  "homepage": "https://github.com/GAMHnile/natourscss#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
