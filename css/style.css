@@ -1,3 +1,11 @@
+/*
+MEDIA QUERY MANAGER
+- phone  600
+- tab-port 900
+- tab-land 1200
+[1200-1800] Our normal css applies here
+- big-desktop 1800 and above 
+*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -34,9 +42,25 @@
 html {
   /* This is used to set the size of 1rem 62.5= 16px */
   font-size: 62.5%; }
+  @media (min-width: 1800) {
+    html {
+      font-size: 75%; } }
+  @media (max-width: 1200) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 900) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 600) {
+    html {
+      font-size: 37.5%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 3rem; }
+  @media (max-width: 900) {
+    body {
+      padding: 0; } }
 
 body {
   font-family: "Lato", sans-serif;
