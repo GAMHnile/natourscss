@@ -1,0 +1,26 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass",
+    "devserver": "live-server",
+    "start": "npm-run-all devserver"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GAMHnile/natourscss.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GAMHnile/natourscss/issues"
+  },
+  "homepage": "https://github.com/GAMHnile/natourscss#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "npm-run-all": "^4.1.5"
+  }
+}
