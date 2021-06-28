@@ -12,3 +12,36 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/*
+MEDIA QUERY MANAGER
+breakpoints are as follows:
+- phone 600
+- tab-port 900
+- tab-land 1200
+[1200-1800] default styles 
+- big-desktop 1800 - infinity
+*/
+
+@mixin respond($breakpoint){
+    @if $breakpoint == phone {
+        @media (max-width: 600px) {
+            @content;
+        }
+    }
+    @if $breakpoint == tab-port {
+        @media (max-width: 900px) {
+            @content;
+        }
+    }
+    @if $breakpoint == tab-land {
+        @media (max-width: 1200px) {
+            @content;
+        }
+    }
+    @if $breakpoint == big-desktop {
+        @media (min-width: 1800px) {
+            @content;
+        }
+    }
+}
